@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Enter Passwored");
         var data = Console.ReadLine();
-        string pattern = "^[A-Z]{1}[a-z]{3,}[@][0-9]{3,}$";
+        string pattern = "^[A-Z]{1}[a-z]{3,}[#@!$&%][0-9]{3,}";
         Regex regex = new Regex(pattern);
 
         if(regex.IsMatch(data))
