@@ -5,9 +5,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter Name");
+        Console.WriteLine("Enter Email");
         var data = Console.ReadLine();
-        string pattern = "^[A-Z]{1}[a-z]{2,}";
+        string pattern = "^[0-9A-Za-z]+([.][0-9A-Za-z]+)[@][0-9A-Za-z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})$";
         Regex regex = new Regex(pattern);
 
         if(regex.IsMatch(data))
