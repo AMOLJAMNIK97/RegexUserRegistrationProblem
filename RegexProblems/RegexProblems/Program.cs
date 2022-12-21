@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Enter Name");
         var data = Console.ReadLine();
-        string pattern = "[A-Z]{1}[a-z]{2,}";
+        string pattern = "^[A-Z]{1}[a-z]{2,}";
         Regex regex = new Regex(pattern);
 
         if(regex.IsMatch(data))
