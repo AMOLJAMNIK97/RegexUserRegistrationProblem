@@ -5,9 +5,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter Passwored Minimum 8");
+        Console.WriteLine("Enter Passwored Minimum");
         var data = Console.ReadLine();
-        string pattern = "^[0-9A-Za-z]{8,}$";
+        string pattern = "^[A-Z]{1}[0-9A-Za-z]{8,}$";
         Regex regex = new Regex(pattern);
 
         if(regex.IsMatch(data))
